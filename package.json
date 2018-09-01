@@ -3,7 +3,9 @@
     "start": "webpack-dev-server --open",
     "build": "webpack --config webpack.prod.js",
     "start-local": "webpack-dev-server --env.es6 --progress --hot --open",
-    "start-local-es5": "webpack-dev-server --env.local --port=80"
+    "start-local-es5": "webpack-dev-server --env.local --port=80",
+    "web": "(npm run install:example && cd website && yarn --ignore-engines && yarn start)",
+    "deploy": "(cd website && yarn build && git checkout gh-pages && cp dist/* .. && git add .. && git commit -m 'Update website' && git push origin gh-pages && git checkout master)"
   },
   "dependencies": {
     "clean-webpack-plugin": "^0.1.19",
@@ -22,7 +24,7 @@
     "react-virtualized": "^9.18.5",
     "redux-actions": "^2.2.1",
     "redux-thunk": "^1.0.0",
-    "yarn": "^1.7.0"
+    "yarn": "^1.9.4"
   },
   "devDependencies": {
     "babel-core": "^6.7.7",
