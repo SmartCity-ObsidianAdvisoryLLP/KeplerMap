@@ -8,6 +8,7 @@
   "dependencies": {
     "clean-webpack-plugin": "^0.1.19",
     "d3-request": "^1.0.6",
+    "dom-to-image": "^2.6.0",
     "global": "^4.3.0",
     "html-webpack-plugin": "^3.2.0",
     "kepler.gl": "^0.0.22",
