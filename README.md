@@ -1,7 +1,4 @@
-# Demo App
-
-This is the src code of kepler.gl demo app.
-
+# KeplerMap
 
 ### Local dev
 ```
